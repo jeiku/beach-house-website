@@ -100,20 +100,33 @@ li a {
 	z-index: 2;
 }
 
+#video-main {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 4rem;
+}
+
+#vid {
+	max-width: 80%;
+}
+
 /* MAIN SHOWCASE */
 
 .main {
 	height: 100%;
 	width: 100%;
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .main a {
-    text-align: center;
+	text-align: center;
 	width: 15rem;
 	display: block;
 	background-color: rgb(221, 57, 85);
@@ -127,8 +140,8 @@ li a {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	cursor: pointer;
-    z-index: 3;
-    text-decoration: none;
+	z-index: 3;
+	text-decoration: none;
 }
 
 .main a:hover {
@@ -149,8 +162,8 @@ li a {
 	display: block;
 	/*margin-top: 10rem;*/
 	z-index: 3;
-    text-shadow: 5px 5px 20px rgb(36, 48, 49);
-    margin-top: 9rem;
+	text-shadow: 5px 5px 20px rgb(36, 48, 49);
+	margin-top: 9rem;
 }
 
 /* DESCRIPTION */
@@ -163,9 +176,9 @@ li a {
 	/*margin-top: 10rem;*/
 	z-index: 3;
 	text-shadow: 5px 5px 10px rgb(20, 27, 27);
-    font-family: "Catamaran", sans-serif;
-    margin-top: -2rem;
-    margin-bottom: 5rem;
+	font-family: "Catamaran", sans-serif;
+	margin-top: -2rem;
+	margin-bottom: 5rem;
 }
 
 /* GALLERY */
@@ -459,13 +472,12 @@ footer {
 	}
 
 	.main h3 {
-        font-size: 2.2rem;
-        margin-top: 0;
+		font-size: 2.2rem;
+		margin-top: 0;
 	}
 }
 
 @media only screen and (max-width: 867px) {
-
 	.main {
 		background-position-x: 30%;
 	}
@@ -473,7 +485,6 @@ footer {
 	#myVideo {
 		left: -35%;
 	}
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -498,6 +509,10 @@ footer {
 
 	#myVideo {
 		display: none;
+	}
+
+	#vid {
+		max-width: 100%;
 	}
 }
 
@@ -560,8 +575,6 @@ footer {
 }
 
 @media only screen and (max-width: 376px) {
-
-
 	footer nav {
 		display: none;
 	}
@@ -575,7 +588,6 @@ footer {
 	.rating .container h2 {
 		font-size: 32px;
 	}
-
 }
 
 @media only screen and (max-width: 336px) {
