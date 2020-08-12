@@ -104,10 +104,6 @@ li a {
 	z-index: 300;
 }
 
-.background-video-container {
-	/* min-height: 1%; */
-}
-
 #myVideo {
 	position: absolute;
 	top: 0;
@@ -717,6 +713,10 @@ footer {
 
 	#myVideo {
 		min-height: 100%;
+	}
+
+	.popup {
+		max-height: 550px;
 	}
 }
 
