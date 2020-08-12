@@ -558,10 +558,11 @@ a img {
 
 footer {
 	z-index: 2;
-	background-color: rgb(128, 126, 190);
+	background-color: rgba(78, 82, 124, 0.632);
 	padding: 0 1rem;
 	font-size: 10px;
 	margin-top: 100px;
+	color: rgb(255, 255, 255);
 }
 
 .flex-footer {
@@ -569,7 +570,7 @@ footer {
 	position: relative;
 	text-align: center;
 	padding: 1em 0;
-	color: white;
+	
 }
 
 .creator {
@@ -657,11 +658,12 @@ footer {
 		font-size: 1.3rem;
 		letter-spacing: 2px;
 		text-align: center;
-		z-index: 5000;
+		z-index: 98000;
 	}
 
 	.nav-link:hover {
 		color: rgb(95, 230, 230);
+		z-index: 95000;
 	}
 
 	.open .menu-toggle .fa-times {
