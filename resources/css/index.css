@@ -13,6 +13,10 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+	background: url("../images/old-moon.png") repeat;
+	scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -22,8 +26,7 @@ body {
 	height: 100%;
 	background-color: rgb(248, 246, 231);
 	/* background-color: #917400; */
-	background-image: url("https://www.transparenttextures.com/patterns/gray-sand.png")
-		repeat;
+	/* background-color: rgb(243, 239, 211); */
 }
 
 .container {
@@ -102,6 +105,7 @@ li a {
 }
 
 .background-video-container {
+	/* min-height: 1%; */
 }
 
 #myVideo {
@@ -109,7 +113,7 @@ li a {
 	top: 0;
 	left: 0;
 	min-width: 100%;
-	min-height: 100%;
+	min-height: 110%;
 	z-index: 2;
 	overflow: hidden;
 }
@@ -314,7 +318,7 @@ li a {
 
 .rating-link {
 	align-self: flex-end;
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	/* color: rgb(15, 90, 219); */
@@ -322,7 +326,7 @@ li a {
 
 .rating-container {
 	background-color: rgb(27, 189, 189);
-	height: 20rem;
+	height: 24rem;
 	padding: 0 1rem;
 	color: white;
 	display: flex;
@@ -334,12 +338,15 @@ li a {
 	font-size: 40px;
 }
 
-.rating1, .rating2, .rating3 {
+.rating1,
+.rating2,
+.rating3 {
 	transform: translateX(100%);
 	opacity: 0;
 	display: hidden;
 	position: absolute;
-	left: 5rem;
+	left: 10%;
+	margin-right: 5rem;
 }
 /* .rating1 .slide{
 	animation: rating-slide 4s ease-in 3;
@@ -362,72 +369,135 @@ li a {
 } */
 
 @-moz-keyframes rating-slide {
-	0%   {
+	0% {
 		display: hidden;
 		opacity: 0;
-		transform: translateX(100%)
+		transform: translateX(100%);
 	}
-	15%, 85%  {
+	15%,
+	85% {
 		display: block;
 		opacity: 1;
-		transform: translateX(0)
+		transform: translateX(0);
 	}
 	100% {
 		display: hidden;
 		opacity: 0;
-		transform: translateX(-100%)
+		transform: translateX(-100%);
 	}
 }
 @-o-keyframes rating-slide {
-	0%   {
+	0% {
 		display: hidden;
 		opacity: 0;
-		transform: translateX(100%)
+		transform: translateX(100%);
 	}
-	15%, 85%  {
+	15%,
+	85% {
 		display: block;
 		opacity: 1;
-		transform: translateX(0)
+		transform: translateX(0);
 	}
 	100% {
 		display: hidden;
 		opacity: 0;
-		transform: translateX(-100%)
+		transform: translateX(-100%);
 	}
 }
 @-webkit-keyframes rating-slide {
-	0%   {
+	0% {
 		display: hidden;
 		opacity: 0;
-		transform: translateX(100%)
+		transform: translateX(100%);
 	}
-	15%, 85%  {
+	15%,
+	85% {
 		display: block;
 		opacity: 1;
-		transform: translateX(0)
+		transform: translateX(0);
 	}
 	100% {
 		display: hidden;
 		opacity: 0;
-		transform: translateX(-100%)
+		transform: translateX(-100%);
 	}
 }
 @keyframes rating-slide {
-	0%   {
+	0% {
 		display: hidden;
 		opacity: 0;
-		transform: translateX(100%)
+		transform: translateX(100%);
 	}
-	15%, 85%  {
+	15%,
+	85% {
 		display: block;
 		opacity: 1;
-		transform: translateX(0)
+		transform: translateX(0);
 	}
 	100% {
 		display: hidden;
 		opacity: 0;
-		transform: translateX(-100%)
+		transform: translateX(-100%);
 	}
+}
+
+.popup {
+	position: fixed;
+	padding: 10px;
+	max-width: 500px;
+	max-height: 700px;
+	border-radius: 0.5em;
+	top: 50%;
+	left: 50%;
+	color: #000;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 1);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s, visibility 0s linear 0.5s;
+	z-index: 1;
+	overflow-y: scroll;
+}
+
+.popup h2 {
+	font-size: 1.3rem;
+}
+
+.popup:target {
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0s;
+}
+.popup .close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	padding: 5px;
+	color: #000;
+	transition: color 0.3s;
+	font-size: 2em;
+	line-height: 1.5;
+	font-weight: 700;
+}
+.popup .close:hover {
+	color: #f00;
+}
+.close-popup {
+	background-color: rgba(0, 0, 0, 0.7);
+	cursor: default;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0s linear 0.5s;
+}
+.popup:target + .close-popup {
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0s;
 }
 
 .clearfix {
@@ -514,6 +584,11 @@ footer {
 .to-top {
 	float: left;
 }
+@media (min-width: 1800px) {
+	.background-video-container {
+		min-height: 10%;
+	}
+}
 
 @media (min-width: 1900px) {
 	.background-video-container {
@@ -558,7 +633,8 @@ footer {
 
 	.navbar {
 		position: fixed;
-		z-index: 9000;
+		z-index: 90;
+		z-index: 95000;
 	}
 
 	.nav-list {
@@ -576,6 +652,7 @@ footer {
 		justify-content: space-around;
 		z-index: 190;
 		overflow: hidden;
+		z-index: 5000;
 	}
 
 	.nav-link {
@@ -584,6 +661,7 @@ footer {
 		font-size: 1.3rem;
 		letter-spacing: 2px;
 		text-align: center;
+		z-index: 5000;
 	}
 
 	.nav-link:hover {
@@ -592,14 +670,17 @@ footer {
 
 	.open .menu-toggle .fa-times {
 		display: block;
+		z-index: 95000;
 	}
 
 	.open .menu-toggle .fa-bars {
 		display: none;
+		z-index: 96000;
 	}
 
 	.open .nav-list {
 		transform: translateX(0);
+		z-index: 95000;
 	}
 
 	.menu-toggle {
@@ -611,16 +692,18 @@ footer {
 		/* transform: translateY(-50%); */
 		/* right: 2.5rem; */
 		cursor: pointer;
-		z-index: 95000;
+		z-index: 96000;
 		color: white;
 	}
 
 	.menu-toggle .fa-times {
 		display: none;
+		z-index: 95000;
 	}
 
 	.menu-toggle .fa-bars {
 		display: block;
+		z-index: 95000;
 	}
 
 	.main a {
@@ -631,6 +714,10 @@ footer {
 		font-size: 2.2rem;
 		margin-top: 0;
 	}
+
+	#myVideo {
+		min-height: 100%;
+	}
 }
 
 @media only screen and (max-width: 867px) {
@@ -640,6 +727,14 @@ footer {
 
 	#myVideo {
 		left: -35%;
+	}
+
+	.rating-container p {
+		font-size: 0.7rem !important;
+	}
+
+	.rating-container {
+		height: 27rem;
 	}
 }
 
@@ -672,20 +767,34 @@ footer {
 	}
 
 	.rating-link {
-		font-size: .7rem !important;
+		font-size: 0.7rem !important;
+	}
+
+	.rating-container {
+		height: 22rem;
 	}
 
 	.rating-container h2 {
-		font-size: 1rem !important;
+		font-size: 1.2rem !important;
 	}
 
 	.rating-container p {
-		font-size: .7rem !important;
+		font-size: 0.7rem !important;
 	}
 
-	#rating1, #rating2, #rating3{
-		left: 2rem;
+	.popup {
+		min-width: 80%;
 	}
+
+	.popup h2 {
+		font-size: 1rem;
+	}
+
+	/* #rating1,
+	#rating2,
+	#rating3 {
+		left: 2rem;
+	} */
 
 	/* #rating1 h2, #rating2 h2, #rating3 h2{
 		font-size: 1rem !important;
