@@ -98,6 +98,11 @@ li a {
 } */
 
 /* VIDEO */
+
+.background-video-container {
+	overflow: hidden;
+}
+
 .site-body {
 	position: absolute;
 	width: 100%;
@@ -138,6 +143,7 @@ li a {
 	flex-direction: column;
 	align-items: center;
 	background: url("../background-img2.jpg") center/cover no-repeat;
+	overflow: hidden;
 }
 
 .main a {
@@ -570,7 +576,6 @@ footer {
 	position: relative;
 	text-align: center;
 	padding: 1em 0;
-	
 }
 
 .creator {
