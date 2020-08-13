@@ -754,7 +754,13 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 700px) {
+@media (-webkit-min-device-pixel-ratio: 2) {
+	.main {
+		background: url(../gallery-images/front-beach-view-mobile.jpg);
+	}
+}
+
+@media only screen and (max-device-width: 700px) {
 	.supporting img {
 		display: none;
 	}
@@ -766,7 +772,7 @@ footer {
 		height: 100%;
 		width: 100%;
 		padding-top: 1rem;
-		background: url(../gallery-images/front-beach-view.jpg);
+		background: url(../gallery-images/front-beach-view-mobile.jpg);
 		background-size: cover;
 		background-position-y: 50px;
 		background-position-x: -150px;
