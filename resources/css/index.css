@@ -586,6 +586,13 @@ footer {
 .to-top {
 	float: left;
 }
+
+@media (orientation: portrait) {
+	.background-video-container {
+		display: none !important;
+		visibility: hidden;
+	}
+}
 @media (min-width: 1800px) {
 	.background-video-container {
 		min-height: 10%;
