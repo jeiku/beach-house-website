@@ -16,6 +16,7 @@
 html {
 	background: url("../images/old-moon.png") repeat;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 html,
@@ -372,7 +373,7 @@ li a {
 
 @-moz-keyframes rating-slide {
 	0% {
-		display: hidden;
+		display: none;
 		opacity: 0;
 		transform: translateX(100%);
 	}
@@ -383,14 +384,14 @@ li a {
 		transform: translateX(0);
 	}
 	100% {
-		display: hidden;
+		display: none;
 		opacity: 0;
 		transform: translateX(-100%);
 	}
 }
 @-o-keyframes rating-slide {
 	0% {
-		display: hidden;
+		display: none;
 		opacity: 0;
 		transform: translateX(100%);
 	}
@@ -401,14 +402,14 @@ li a {
 		transform: translateX(0);
 	}
 	100% {
-		display: hidden;
+		display: none;
 		opacity: 0;
 		transform: translateX(-100%);
 	}
 }
 @-webkit-keyframes rating-slide {
 	0% {
-		display: hidden;
+		display: none;
 		opacity: 0;
 		transform: translateX(100%);
 	}
@@ -419,14 +420,14 @@ li a {
 		transform: translateX(0);
 	}
 	100% {
-		display: hidden;
+		display: none;
 		opacity: 0;
 		transform: translateX(-100%);
 	}
 }
 @keyframes rating-slide {
 	0% {
-		display: hidden;
+		display: none;
 		opacity: 0;
 		transform: translateX(100%);
 	}
@@ -437,7 +438,7 @@ li a {
 		transform: translateX(0);
 	}
 	100% {
-		display: hidden;
+		display: none;
 		opacity: 0;
 		transform: translateX(-100%);
 	}
