@@ -192,7 +192,17 @@ li a {
 
 /* DESCRIPTION */
 
-
+.main h3 {
+	font-size: 2rem;
+	color: #fff;
+	text-align: center;
+	display: block;
+	z-index: 3;
+	text-shadow: 5px 5px 10px rgb(20, 27, 27);
+	font-family: "Catamaran", sans-serif;
+	margin-top: -1.5rem;
+	margin-bottom: 3rem;
+}
 
 /* GALLERY */
 
