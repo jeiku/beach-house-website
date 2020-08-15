@@ -450,8 +450,9 @@ li a {
 	padding: 10px;
 	max-width: 500px;
 	max-height: 700px;
+	min-height: 50%;
 	border-radius: 0.5em;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	color: #000;
 	transform: translate(-50%, -50%);
@@ -757,6 +758,10 @@ footer {
 @media (-webkit-min-device-pixel-ratio: 2) {
 	.main {
 		background: url(../gallery-images/front-beach-view-mobile.jpg);
+		background-size: cover;
+		background-position-y: 50px;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
 	}
 }
 
@@ -775,7 +780,6 @@ footer {
 		background: url(../gallery-images/front-beach-view-mobile.jpg);
 		background-size: cover;
 		background-position-y: 50px;
-		background-position-x: -150px;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 	}
