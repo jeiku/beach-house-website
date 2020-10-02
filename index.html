@@ -279,7 +279,7 @@
           </div>
             <div class="each-amenity">
                 <img src="./resources/icons/pawprints.png" alt="Pets Allowed Icon" />
-                Pets Allowed
+                Pets Allowed (Pet Fee REQ)
             </div>
             <div class="each-amenity">
                 <img src="./resources/icons/bathroom.png" alt="Bathroom Icon" />
@@ -417,10 +417,6 @@
         <h2 style="font-style: italic">"Everything provided for which made it so convenient for all of us flying in. Lovely home and great owners!"</h2>
         <p>~ Guest from VRBO, 2019</p>
 
-        <h2 class="stars">★★★★★</h2>
-        <h2 style="font-style: italic">"Everything provided for which made it so convenient for all of us flying in. Lovely home and great owners!"</h2>
-        <p>~ Guest from VRBO, 2019</p>
-
     </div>
     <a href="#rating" class="close-popup"></a>
     
@@ -430,7 +426,13 @@
     
     <div class="location">
       <p>Edisto Beach, SC, USA</p>
-    <div class="container" id="map"></div>
+    <div class="container" >
+      <div class="map-container">
+        <a href="https://goo.gl/maps/atDho5TTXKfSDJrRA" target="_blank">
+          <img class="map" src="./resources/images/island-manor-map.png" alt="" srcset="">
+        </a>
+      </div>
+    </div>
     </div>
 
 
@@ -477,8 +479,9 @@
     <!-- JAVASCRIPT -->
 
     <!-- MAP JAVA -->
-
-    <script>
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXiVsNM4FWtOFJPJnR6zXvto9FwAcy428&callback=initMap"
+    type="text/javascript"></script>
+    <script defer>
       // Initialize and add the map
       function initMap() {
         // The location of Edisto
@@ -489,9 +492,8 @@
         // The marker, positioned at edisto
         var marker = new google.maps.Marker({position: edisto, map: map});
       }
-    </script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXiVsNM4FWtOFJPJnR6zXvto9FwAcy428&callback=initMap"
-    type="text/javascript"></script>
+    </script> -->
+
     <!-- GALLERY JAVA -->
 
     <script>
