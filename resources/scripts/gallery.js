@@ -37,9 +37,12 @@ const backMask = document.querySelector(".background__mask");
 // const node = document.createTextNode("This is new.");
 
 // window.addEventListener("resize", resizeAll);
-gallery.querySelectorAll(".gallery__item").forEach((item) => {
-  item.addEventListener("click", () => {
-    item.classList.toggle("full");
-    backMask.classList.toggle("darken");
+
+if (screen.width > 600) {
+  gallery.querySelectorAll(".gallery__item").forEach((item) => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("full");
+      backMask.classList.toggle("darken");
+    });
   });
-});
+}

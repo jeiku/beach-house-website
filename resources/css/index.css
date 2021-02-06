@@ -375,13 +375,14 @@ header::after {
   display: flex;
   flex-direction: column;
   place-content: center;
-  border: red solid 3px;
+  /* border: red solid 3px; */
 }
 
 .amenities__bottom {
   /* overflow: hidden; */
   display: none;
   animation: view-less 2s forwards;
+  margin-bottom: 20px;
 }
 
 .show {
@@ -495,7 +496,7 @@ i.fa-chevron-up {
   flex-direction: column;
   /* height: 150px;
   width: 150px; */
-  margin: 10px;
+  /* margin: 10px; */
   padding: 3rem;
   border-radius: 20%;
 }
@@ -510,6 +511,12 @@ a img {
 #call {
   height: 110px;
   width: 110px;
+}
+
+#mail,
+#calendar {
+  height: 100px;
+  width: 100px;
 }
 
 @-moz-keyframes pulse {
@@ -703,7 +710,7 @@ a img {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* margin-top: 0px; */
+    margin-top: 0px;
   }
 
   .nav__link {
@@ -711,6 +718,10 @@ a img {
     font-size: 1.3rem;
     letter-spacing: 2px;
     text-align: center;
+  }
+
+  .nav__item {
+    margin-bottom: 2rem;
   }
 
   .nav__toggle {
@@ -849,9 +860,9 @@ a img {
 }
 
 @media only screen and (max-width: 603px) {
-  .contact__link {
-    gap: 2rem;
-  }
+  /* .contact__link {
+    gap: 0rem;
+  } */
 
   .contact h2 {
     margin-top: 11rem;

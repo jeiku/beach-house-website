@@ -211,6 +211,13 @@ video {
   .background__mask {
     display: none !important;
   }
+  .gallery__img {
+    cursor: default;
+  }
+
+  .gallery .gallery__item {
+    cursor: default;
+  }
 }
 @media (max-width: 400px) {
   .gallery {
