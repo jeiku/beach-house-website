@@ -42,8 +42,10 @@ Variables
 
 html,
 body {
+  position: fixed;
   max-width: 100% !important;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
+  overflow-y: auto !important;
 }
 
 /*
@@ -946,7 +948,7 @@ a img {
   } */
 
   .amenities__bottom {
-    margin-bottom: 15rem;
+    margin-bottom: 18rem;
     /* margin-bottom: 8rem; */
   }
 }
