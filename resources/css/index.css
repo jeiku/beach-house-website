@@ -177,6 +177,11 @@ header::after {
   height: 100%;
   object-fit: cover;
   z-index: -2;
+  overflow: hidden;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none;
 }
 
 /* HEADER TITLE */
@@ -691,6 +696,46 @@ a img {
 }
 
 @media only screen and (max-width: 960px) {
+  .navbar {
+    position: fixed;
+    z-index: 90;
+    z-index: 95000;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: rgb(95, 92, 89);
+    padding: 1rem;
+    transition: all 0.3s linear;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 190;
+    overflow: hidden;
+    z-index: 5000;
+  }
+
+  .nav-link {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 98000;
+  }
+
+  .nav-link:hover {
+    color: rgb(95, 230, 230);
+    z-index: 95000;
+  }
+
+  /* hhhhhhhhhhhhhhh */
+
   nav {
     position: fixed;
     z-index: 8;
@@ -701,28 +746,30 @@ a img {
     top: 0;
     left: 0;
     width: 60%;
-    height: 100vh;
+    height: 100%;
     background: var(--clr-text);
-    padding: 0rem 1rem;
+    padding: 1rem;
     transition: var(--transition);
     transform: translateX(-100%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    overflow: hidden;
+    /* align-items: center; */
     margin-top: 0px;
   }
 
   .nav__link {
+    display: block;
     text-transform: uppercase;
     font-size: 1.3rem;
     letter-spacing: 2px;
     text-align: center;
   }
 
-  .nav__item {
+  /* .nav__item {
     margin-bottom: 2rem;
-  }
+  } */
 
   .nav__toggle {
     position: fixed;
@@ -845,6 +892,10 @@ a img {
     background: #fff;
   }
 
+  .contact__link {
+    gap: 6rem;
+  }
+
   .contact__call,
   .contact__mail,
   .contact__web {
@@ -864,24 +915,33 @@ a img {
     gap: 0rem;
   } */
 
+  .contact {
+    margin-top: 15rem;
+  }
+
   .contact h2 {
-    margin-top: 11rem;
+    font-size: 2.5rem;
+    margin-bottom: -2rem;
   }
 
   .contact__call,
   .contact__mail,
   .contact__web {
-    margin: 20px 0;
+    /* margin: 20px 0; */
   }
 
   .main h3 {
     font-size: 1.2rem;
   }
-}
 
-@media only screen and (max-width: 603px) {
   .amenities__button__container {
-    margin-top: 8rem;
+    margin-top: 9rem;
+    /* margin-bottom: 8rem; */
+  }
+
+  .amenities__bottom__container {
+    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
   }
 }
 
