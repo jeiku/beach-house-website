@@ -85,7 +85,7 @@ img {
 }
 
 .container {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* width: 100%; */
   max-width: 122.5rem;
   margin: 3rem auto;
@@ -100,7 +100,7 @@ NAVBAR
 */
 
 nav {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   position: absolute;
   top: 0;
   height: 60px;
@@ -287,7 +287,7 @@ header::after {
 /* RATING */
 
 .rating__container {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: var(--clr-secondary);
   height: 27rem;
   padding: 0 1rem;
@@ -375,9 +375,11 @@ header::after {
   display: flex;
   flex-direction: column;
   place-content: center;
+  border: red solid 3px;
 }
 
 .amenities__bottom {
+  /* overflow: hidden; */
   display: none;
   animation: view-less 2s forwards;
 }
@@ -476,7 +478,7 @@ i.fa-chevron-up {
   justify-content: space-around;
   flex-wrap: wrap;
   color: rgb(54, 67, 90);
-  gap: 4rem;
+  /* gap: 4rem; */
 }
 
 .contact__call {
@@ -496,6 +498,18 @@ i.fa-chevron-up {
   margin: 10px;
   padding: 3rem;
   border-radius: 20%;
+}
+
+a img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+#call {
+  height: 110px;
+  width: 110px;
 }
 
 @-moz-keyframes pulse {
@@ -689,7 +703,7 @@ i.fa-chevron-up {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 0px;
+    /* margin-top: 0px; */
   }
 
   .nav__link {
@@ -747,7 +761,7 @@ i.fa-chevron-up {
     height: 27rem;
   }
 }
-
+/* 
 @media (-webkit-min-device-pixel-ratio: 2) {
   .main {
     background: url(../gallery-images/front-beach-view-mobile.jpg);
@@ -756,7 +770,7 @@ i.fa-chevron-up {
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-}
+} */
 
 @media screen and (min-width: 900px) {
   .main__headline {
@@ -802,6 +816,7 @@ i.fa-chevron-up {
 
   .amenities__bottom {
     margin-top: -95px;
+    overflow: hidden;
   }
 }
 

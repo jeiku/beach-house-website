@@ -207,6 +207,10 @@ video {
   .title h2 {
     font-size: 1.5rem;
   }
+
+  .background__mask {
+    display: none !important;
+  }
 }
 @media (max-width: 400px) {
   .gallery {
