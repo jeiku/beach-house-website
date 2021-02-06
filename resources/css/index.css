@@ -29,7 +29,7 @@ Variables
   overflow-x: hidden;
   --clr-primary: #70c9d5;
   --clr-secondary: rgb(186, 95, 122);
-  --clr-text: rgb(44, 43, 43);
+  --clr-text: rgb(59, 59, 59);
   --clr-white: #fff;
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
@@ -483,7 +483,7 @@ i.fa-chevron-up {
 .contact__call,
 .contact__mail,
 .contact__web {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -810,6 +810,16 @@ i.fa-chevron-up {
     grid-template-columns: repeat(3, 200px);
     place-content: center;
     gap: 10%;
+  }
+
+  .contact {
+    background: #fff;
+  }
+
+  .contact__call,
+  .contact__mail,
+  .contact__web {
+    background-color: rgb(247, 247, 247);
   }
 
   .amenities__item {
