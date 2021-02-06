@@ -85,6 +85,7 @@ img {
 }
 
 .container {
+  overflow-x: hidden;
   /* width: 100%; */
   max-width: 122.5rem;
   margin: 3rem auto;
@@ -99,6 +100,7 @@ NAVBAR
 */
 
 nav {
+  overflow-x: hidden;
   position: absolute;
   top: 0;
   height: 60px;
@@ -285,6 +287,7 @@ header::after {
 /* RATING */
 
 .rating__container {
+  overflow: hidden;
   background-color: var(--clr-secondary);
   height: 27rem;
   padding: 0 1rem;
@@ -488,8 +491,8 @@ i.fa-chevron-up {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 150px;
-  width: 150px;
+  /* height: 150px;
+  width: 150px; */
   margin: 10px;
   padding: 3rem;
   border-radius: 20%;
@@ -679,7 +682,7 @@ i.fa-chevron-up {
     width: 60%;
     height: 100vh;
     background: var(--clr-text);
-    padding: 5rem 1rem;
+    padding: 0rem 1rem;
     transition: var(--transition);
     transform: translateX(-100%);
     display: flex;
@@ -853,5 +856,11 @@ i.fa-chevron-up {
 @media only screen and (max-width: 603px) {
   .amenities__button__container {
     margin-top: 8rem;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .amenities__button__container {
+    margin-bottom: 8rem;
   }
 }
