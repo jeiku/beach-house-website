@@ -42,7 +42,7 @@ Variables
 
 html,
 body {
-  position: fixed;
+  /* position: fixed; */
   max-width: 100% !important;
   overflow: hidden !important;
   overflow-y: auto !important;
@@ -950,6 +950,10 @@ a img {
   .amenities__bottom {
     margin-bottom: 18rem;
     /* margin-bottom: 8rem; */
+  }
+
+  #iron {
+    margin-bottom: 5px;
   }
 }
 
