@@ -932,12 +932,6 @@ a img {
     margin-bottom: -2rem;
   }
 
-  .contact__call,
-  .contact__mail,
-  .contact__web {
-    /* margin: 20px 0; */
-  }
-
   .main h3 {
     font-size: 1.2rem;
   }
@@ -952,7 +946,7 @@ a img {
     /* margin-bottom: 8rem; */
   }
 
-  #iron {
+  #shower {
     margin-bottom: 5px;
   }
 }

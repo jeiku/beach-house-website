@@ -5,4 +5,5 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp gallery.html $DEPLOYPATH
     - /bin/cp ratings.html $DEPLOYPATH
+    - /bin/cp location.html $DEPLOYPATH
     - /bin/cp -R resources $DEPLOYPATH
