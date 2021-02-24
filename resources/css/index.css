@@ -230,6 +230,7 @@ video::-webkit-media-controls-start-playback-button {
   color: var(--clr-white);
   font-family: var(--ff-primary);
   text-transform: capitalize;
+  font-weight: 200;
 }
 
 .title__section a {
@@ -240,12 +241,7 @@ video::-webkit-media-controls-start-playback-button {
   background-color: var(--clr-primary);
   margin-top: 4rem;
   padding: 0.75rem 0.6rem;
-  border: solid 1px var(--clr-text);
   border-radius: var(--radius);
-  display: flex;
-  flex-direction: column;
-  place-content: center;
-  text-align: center;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -478,6 +474,7 @@ i.fa-chevron-up {
 /* CONTACT */
 
 .contact {
+  padding-bottom: 100px;
   margin-top: 6rem;
   text-align: center;
   background: linear-gradient(
@@ -538,6 +535,34 @@ a img {
   height: 100px;
   width: 100px;
 }
+
+/* FOOTER */
+
+footer {
+  z-index: 2;
+  background-color: rgba(78, 82, 124, 0.632);
+  padding: 0 1rem;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.flex-footer {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.creator {
+  width: 100%;
+  display: block;
+}
+
+.to-top {
+  float: left;
+}
+
+/* ANIMATIONS */
 
 @-moz-keyframes pulse {
   0% {

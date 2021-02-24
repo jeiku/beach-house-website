@@ -70,7 +70,7 @@
 
     <!-- VIDEO HEADER -->
 
-    <header>
+    <header id="main-link">
       <video class="video__container" muted autoplay loop playsinline poster="resources/images/background-img.png">
         <source
           src="./resources/videos/beach-house-video-loop.webm"
@@ -87,6 +87,7 @@
       <hgroup>
         <h1>The Island Manor</h1>
         <h3>The best vacation rental on Edisto Beach</h3>
+        <!-- <h3>You Should Be Here</h3> -->
       </hgroup>
       <a href="#contact">Book Now</a>
     </section>
@@ -104,15 +105,15 @@
             />
           </div>
           <article class="main__description padding-left animate-left">
-            <h2 class="main__headline">About the Manor</h2>
+            <h2 class="main__headline">About the Island Manor</h2>
             <p>
               This is the best beachfront location you will find in Edisto
               Beach, South Carolina. The Island Manor has 6 bedroom, 3 baths and
               a whole lot of living space. Five of the six bedrooms are
-              oceanview, with sliding glass doors out to porches. Enough room
+              oceanview, with sliding glass doors out to full length porches. Enough room
               for family and friends! This oceanfront vacation rental is a newly
               renovated showplace with gorgeous ocean views. This is the South
-              at its most charming, a premier beach experience!
+              at its most charming, a premier beach experience with miles of uncrowded relaxation!
             </p>
             <a href="#contact" class="btn">choose a date</a>
           </article>
@@ -163,7 +164,7 @@
           <article class="main__description padding-right animate-left">
             <h2 class="main__headline">Edisto Beach</h2>
             <p>
-              Edisto Beach, South Carolina is a beautiful uncommercialized,
+              Edisto Beach, South Carolina is a beautiful, uncommercialized,
               family-oriented beach! Rich in Native American history, Edisto
               Beach on Edisto Island is home to one of four oceanfront state
               parks in South Carolina. Edisto Beach State Park features trails
@@ -220,9 +221,9 @@
           <div class="main__description padding-left animate-right">
             <h2 class="main__headline">Bright & Vibrant</h2>
             <p>
-              The Island Manor is full of the classic southern Edisto charm.
+              The Island Manor is full of classic southern Edisto charm.
               Bright colorful rooms and southern decor. You and your family will
-              be living the authentic Edisto life! Come escape to this ocean
+              be living the authentic Edisto beach life! Come escape to this ocean
               paradise!
             </p>
             <a href="/gallery.html" class="btn">view gallery</a>
@@ -254,16 +255,16 @@
           <p>6 Bedrooms (Sleeps 14 people)</p>
         </div>
         <div class="amenities__item">
-          <img src="./resources/icons/pawprints.png" loading="lazy" alt="Pets Allowed Icon" />
-          <p>Pets Allowed (Pet Fee REQ)</p>
+          <img src="./resources/icons/wifi.png" loading="lazy" alt="Wifi Icon" />
+          <p>Fast Wi-fi</p>
         </div>
         <div class="amenities__item">
           <img src="./resources/icons/bathroom.png" loading="lazy" alt="Bathroom Icon" />
           <p>3 Bathrooms</p>
         </div>
         <div class="amenities__item">
-          <img src="./resources/icons/fan.png" loading="lazy" alt="Fan Icon" />
-          <p>AC & Heating</p>
+          <img src="./resources/icons/car.png" loading="lazy" alt="Car Icon" />
+          <p>Free Parking (6 spots)</p>
         </div>
         <div class="amenities__item">
           <img src="./resources/icons/tv.png" loading="lazy" alt="TV Icon" />
@@ -275,16 +276,16 @@
     <section class="amenities__bottom container">
       <div class="amenities__grid">
         <div class="amenities__item">
-          <img src="./resources/icons/wifi.png" loading="lazy" alt="Wifi Icon" />
-          <p>Fast Wi-fi</p>
+          <img src="./resources/icons/pawprints.png" loading="lazy" alt="Pets Allowed Icon" />
+          <p>Pets Allowed (Pet Fee REQ)</p>
         </div>
         <div class="amenities__item">
           <img src="./resources/icons/washer.png" loading="lazy" alt="Washer Icon" />
           <p>Washer & Dryer</p>
         </div>
         <div class="amenities__item">
-          <img src="./resources/icons/car.png" loading="lazy" alt="Car Icon" />
-          <p>Free Parking (6 spots)</p>
+          <img src="./resources/icons/fan.png" loading="lazy" alt="Fan Icon" />
+          <p>AC & Heating</p>
         </div>
         <div class="amenities__item">
           <img src="./resources/icons/essentials.png" loading="lazy" alt="Hair Dryer Icon" />
@@ -329,6 +330,15 @@
     <section id="contact" class="contact">
       <h2>Contact Us</h2>
       <div class="contact__link">
+        <a href="https://www.vrbo.com/7440055ha" class="contact__web">
+          <picture>
+            <img id="calendar"
+              src="./resources/icons/time-and-date.png"
+              alt="icn-contact-calendar"
+            />
+          </picture>
+          <p>vrbo.com/oceanfront-listing</p>
+        </a>
         <a href="tel:8434103455" class="contact__call">
           <img id="call" src="./resources/icons/24-hours.png" alt="icn-contact-phone" />
          (843)410-3455
@@ -342,18 +352,25 @@
           </picture>
           <p>info@theislandmanor.com</p>
         </a>
-        <a href="https://www.vrbo.com/7440055ha" class="contact__web">
-          <picture>
-            <img id="calendar"
-              src="./resources/icons/time-and-date.png"
-              alt="icn-contact-calendar"
-            />
-          </picture>
-          <p>vrbo.com/oceanfront-listing</p>
-        </a>
       </div>
     </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="flex-footer">
+        <div class="to-top">
+          <a href="#main-link">To Top</a>
+        </div>
+
+        <div class="creator">
+          Website designed by <a href="https://jeiku.github.io">Jake West</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="./resources/scripts/app.js"></script>
   </body>
 </html>
+
+<!-- Icons made by Freepik from www.flaticon.com -->
