@@ -310,6 +310,7 @@ video::-webkit-media-controls-start-playback-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .rating__container h2:nth-of-type(2) {
@@ -333,7 +334,7 @@ video::-webkit-media-controls-start-playback-button {
 .rating__3 {
   transform: translateX(100%);
   opacity: 0;
-  display: none;
+  display: hidden;
   position: absolute;
   left: 10%;
   margin-right: 5rem;
